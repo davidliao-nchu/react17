@@ -8,7 +8,7 @@
   position: relative;
 }
 
-#root, #content {
+#root, .content {
   width: 100%;
   position: absolute;
   top: 30px;

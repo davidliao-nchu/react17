@@ -8,19 +8,21 @@
 import {createStore, combineReducers} from 'redux'
 
 // 2. 引入為各組件服務的reducer
-// 引入為List組件服務的reducer
-import listReducer from './reducers/list'
-// 引入為Todo組件服務的reducer
-import todoReducer from './reducers/todo'
+// 引入為Count組件服務的reducer
+import countReducer from './reducers/count'
+// 引入為Person組件服務的reducer
+import personReducer from './reducers/person'
+// 引入redux-thunk，用於支持異步action
+// import thunk from 'redux-thunk'
 // 引入redux-devtools-extension
 // import {composeWithDevTools} from 'redux-devtools-extension'
 
-// 3. 匯總所有的reducer變為一個總的reducer
+//3. 匯總所有的reducer變為一個總的reducer
 const allReducer = combineReducers({
-	todos: todoReducer, // todoReducer回傳的結果，store存在key為"todos"的物件當中
-	tabFlag: listReducer, // tabReducer回傳的結果，store存在key為"tabFlag"的物件當中
+	he: countReducer, //countReducer回傳的結果，store存在key為"he"的物件當中
+	rens: personReducer //同理，personReducer回傳的結果，store將它存在key為"rens"的物件之中
 })
 
-// 4. 暴露store 
+//4. 暴露store 
 // export default createStore(allReducer,composeWithDevTools(applyMiddleware(thunk)))
 export default createStore(allReducer)

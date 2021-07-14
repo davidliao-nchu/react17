@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List (React)</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&family=Noto+Sans+TC:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- <section>
+    <div class="d-flex justify-content-center">
+      <div class="root-bg">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 10">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: url(#未命名漸層_4);
+              }
+            </style>
+            <linearGradient id="未命名漸層_4" x1="8" y1="10" x2="8" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#fff" />
+              <stop offset="0.1" stop-color="#fff8f1" />
+              <stop offset="0.3" stop-color="#ffe6cb" />
+              <stop offset="0.57" stop-color="#ffc98e" />
+              <stop offset="0.89" stop-color="#ffa13b" />
+              <stop offset="1" stop-color="#ff931e" />
+            </linearGradient>
+          </defs>
+          <g id="圖層_2" data-name="圖層 2">
+            <g id="圖層_1-2" data-name="圖層 1">
+              <polygon class="cls-1" points="40 5 40 0 0 0 0 10 40 5" />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div id="root"></div>
+    </div>
+  </section> -->
+
+  <section id="TODO-LIST">
+    <div class="container-fluid">
+      <div class="root-bg">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 10">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: url(#未命名漸層_4);
+              }
+            </style>
+            <linearGradient id="未命名漸層_4" x1="8" y1="10" x2="8" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#fff" />
+              <stop offset="0.1" stop-color="#fff8f1" />
+              <stop offset="0.3" stop-color="#ffe6cb" />
+              <stop offset="0.57" stop-color="#ffc98e" />
+              <stop offset="0.89" stop-color="#ffa13b" />
+              <stop offset="1" stop-color="#ff931e" />
+            </linearGradient>
+          </defs>
+          <g id="圖層_2" data-name="圖層 2">
+            <g id="圖層_1-2" data-name="圖層 1">
+              <polygon class="cls-1" points="40 5 40 0 0 0 0 10 40 5" />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="content">
+        <div class="my-4 d-flex justify-content-center"><span class="title">TODO LIST</span></div>
+        <form class="add-todo mx-auto d-flex align-items-center">
+          <input id="add-txt" type="text" name="item" placeholder="新增待辦事項" required>
+          <input id="add-btn" type="submit" value="+">
+        </form>
+        <div id="root01" class="todos mx-auto d-flex flex-column align-items-center">
+          <div class="todo-tabs row">
+            <div class="todo-tab col-4 active" data-tab="all">全部</div>
+            <div class="todo-tab col-4" data-tab="unfinished">待完成</div>
+            <div class="todo-tab col-4" data-tab="finished">已完成</div>
+          </div>
+          <label class="todo">把冰箱發霉的檸檬拿去丟
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            <img class="delmark" src="./img/cancel.jpg" alt="delmark">
+          </label>
+          <label class="todo">整理電腦資料夾
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <img class="delmark" src="./img/cancel.jpg" alt="delmark">
+          </label>
+          <label class="todo">繳電費、水費、瓦斯費
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            <img class="delmark" src="./img/cancel.jpg" alt="delmark">
+          </label>
+          <label class="todo">約ada星期四吃晚餐、吃宵夜、看電影、閒聊天、還有其他
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <img class="delmark" src="./img/cancel.jpg" alt="delmark">
+          </label>
+          <label class="todo">蝦皮回應
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            <img class="delmark" src="./img/cancel.jpg" alt="delmark">
+          </label>
+          <label class="todo">手錶、疏困、匿名下載
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <img class="delmark" src="./img/cancel.jpg" alt="delmark">
+          </label>
+          <label class="todo">03的筆試
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <img class="delmark" src="./img/cancel.jpg" alt="delmark">
+          </label>
+          <label class="todo">約linda星期五吃雞
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <img class="delmark" src="./img/cancel.jpg" alt="delmark">
+          </label>
+          <div class="todo-footer d-flex align-items-center">
+            <span class="count">5 個待完成項目</span>
+            <button type="button" class="btn btn-outline-secondary btn-clear-finished">清除已完成項目</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script>
+    let todoTabs = document.querySelectorAll('.todo-tab');
+    todoTabs.forEach(todoTab => {
+      todoTab.addEventListener('click', pickTab);
+    });
+    function pickTab(e) {
+      todoTabs.forEach(todoTab => todoTab.classList.remove('active'));
+      e.target.classList.add('active');
+      console.log(e.target.dataset.tab);
+
+      let clearBtn = document.querySelector('.btn-clear-finished');
+      (e.target.dataset.tab == 'finished') ? clearBtn.style.display = 'block' : clearBtn.style.display = 'none';
+    };
+
+    let todos = document.querySelectorAll('.todo');
+    todos.forEach(todo => {
+      (todo.children[0].checked) ? todo.classList.add('word-through') : todo.classList.remove('word-through'); //初始化
+      todo.addEventListener('click', refresh)
+    });
+    function refresh(e) {
+      // console.log(e); //有兩個元素...
+      if (!e.target.matches('label.todo')) return; //不要其他的
+      (!e.target.children[0].checked) ? e.target.classList.add('word-through') : e.target.classList.remove('word-through');
+    };
+
+    let delmarks = document.querySelectorAll('.delmark');
+    // console.log(delmarks);
+    delmarks.forEach((delmark) => delmark.addEventListener('click', delme));
+    function delme(e) {
+      e.preventDefault();
+      console.log("刪除事件發生在：", e);
+      console.log(e.target.parentElement.children[0].checked);
+    };
+
+  </script>
+</body>
+
+</html>

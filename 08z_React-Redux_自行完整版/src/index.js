@@ -22,7 +22,7 @@ ReactDOM.render(
 	<Provider store={store}>
 		<App/>
 	</Provider>,
-	document.getElementById('content')
+	document.getElementById('root')
 )
 
 // 在使用react-redux後，因為connect的關係
