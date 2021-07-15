@@ -29,6 +29,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+build 之後，將 build\ 整個搬到案件目錄中，並打開 build\ 下的 index.html，修改下列幾個地方：
+=> 搜尋 chunk，對每一個符合的(不管是css還是js)項目路徑最前面(/static前面)加上英文的句點(.)符號，即在當前目錄下工作即可
+最後使用 GitHub Desktop 作同步上傳，並小心改掉 github 的路徑 (請注意路徑中的一些奇怪路徑，都要刪除)，就可以線上正確瀏覽並使用了!!! 
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
