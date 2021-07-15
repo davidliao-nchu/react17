@@ -1,0 +1,95 @@
+/* The todo */
+.todo {
+  width: 428px;
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 12px;
+  margin-top: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #3333;
+  font-family: NotoSansCJKtc-Regular;
+  font-size: 18px;
+  color: #333333;
+  letter-spacing: 0.62px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.todo input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.todo:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+/*.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}*/
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.todo input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.todo .checkmark:after {
+  left: 4px;
+  top: -12px;
+  width: 15px;
+  height: 28px;
+  border: solid green;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.delmark {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+
+.todo:hover input ~ .delmark {
+  display: block;
+}
+
+.delmark:hover {
+  transform: scale(1.2);
+}
+
+.word-through {
+  color: #3333;
+  text-decoration: line-through;
+}

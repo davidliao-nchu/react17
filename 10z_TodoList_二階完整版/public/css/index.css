@@ -1,0 +1,15 @@
+* {
+  font-family: 'Baloo 2', 'Tamma 2', 'Noto Sans TC';
+  transition: all .3s;
+}
+
+.container-fluid {
+  padding: 0;
+  position: relative;
+}
+
+#root {
+  width: 100%;
+  position: absolute;
+  top: 30px;
+}

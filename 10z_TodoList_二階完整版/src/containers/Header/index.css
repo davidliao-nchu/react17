@@ -1,0 +1,23 @@
+.add-todo {
+  width: 500px;
+  height: 48px;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+#add-txt {
+  width: 436px;
+  margin-left: 12px;
+  padding: 0 8px;
+  font-size: 18px;
+  border: 0;
+  border-radius: 3px;
+}
+
+#add-btn {
+  margin-left: auto;
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+}

@@ -1,0 +1,52 @@
+.container-fluid {
+  padding: 0;
+  position: relative;
+}
+
+.title {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 92px;
+  font-weight: bold;
+}
+
+.todos, .cnotes {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+}
+
+.todo-tabs {
+  width: 100%;
+  height: 56px;
+  cursor: pointer;
+}
+
+.todo-tabs .todo-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9F9A91;
+  border-bottom: 2px solid #3333;
+  letter-spacing: 0.7px;
+}
+
+.active {
+  color: #333333!important;
+  border-bottom: 2px solid #333333!important;
+}
+
+.todo-footer {
+  width: 100%;
+  height: 66px;
+}
+
+.todo-footer .count {
+  margin-left: 36px;
+  font-size: 18px;
+}
+
+.todo-footer .btn-clear-finished {
+  margin-left: auto;
+  margin-right: 36px;
+  display: none;
+}
