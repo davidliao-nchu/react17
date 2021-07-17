@@ -103,7 +103,7 @@ class List extends Component {
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  您可以用此程式來管理您的待辦事項，在第一次使用時會有一些範例事項展示。<strong>本程式不會回傳任何資料到任何電腦或伺服器</strong>，預設使用您瀏覽器的 LocalStorage 空間進行待辦資料的存取。
+                  您可以用此程式來管理「待辦事項」，在第一次使用時會有一些範例事項展示。<strong>本程式不會回傳任何資料到任何電腦或伺服器</strong>，預設使用瀏覽器的 LocalStorage 空間進行待辦資料的存取。
                 </div>
               </div>
             </div>
@@ -115,7 +115,7 @@ class List extends Component {
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  您可以經由「已完成」標籤中的【清除已完成項目】按鈕來清除您已完成的項目，而若您同時按住鍵盤上的 Alt 鍵並點選此按鈕時，可以<strong>完整清除您所有的待辦事項以及本程式儲存在 LocalStorage 的所有內容</strong>，之後您直接關閉視窗即可。
+                  您可以經由「已完成」標籤中的【清除已完成項目】按鈕來清除已完成的項目；而若同時按住鍵盤上的 <span style={{color: 'red'}}>Alt</span> 鍵並點選此按鈕時，可以<strong>完整清除所有的待辦事項以及儲存在 LocalStorage 的全部內容</strong>，之後直接關閉視窗即可。
                 </div>
               </div>
             </div>
